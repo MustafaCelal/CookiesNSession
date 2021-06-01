@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\repos\\CookiesNSession\\CookiesNSession\\CookiesNSession.csproj": {}
+    "E:\\repos\\CookiesNSession\\CookiesNSession.csproj": {}
   },
   "projects": {
-    "E:\\repos\\CookiesNSession\\CookiesNSession\\CookiesNSession.csproj": {
+    "E:\\repos\\CookiesNSession\\CookiesNSession.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\repos\\CookiesNSession\\CookiesNSession\\CookiesNSession.csproj",
+        "projectUniqueName": "E:\\repos\\CookiesNSession\\CookiesNSession.csproj",
         "projectName": "CookiesNSession",
-        "projectPath": "E:\\repos\\CookiesNSession\\CookiesNSession\\CookiesNSession.csproj",
+        "projectPath": "E:\\repos\\CookiesNSession\\CookiesNSession.csproj",
         "packagesPath": "C:\\Users\\mwin10\\.nuget\\packages\\",
-        "outputPath": "E:\\repos\\CookiesNSession\\CookiesNSession\\obj\\",
+        "outputPath": "E:\\repos\\CookiesNSession\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mwin10\\AppData\\Roaming\\NuGet\\NuGet.Config",

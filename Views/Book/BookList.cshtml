@@ -1,0 +1,31 @@
+﻿@model List<CookiesNSession.Models.BookModel>
+@{
+    ViewData["Title"] = "BookList";
+}
+
+<h1>BookList</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Kitap Adı</th>
+            <th>Yazarı</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (BookModel kitap in Model)
+        {
+        <tr>
+            <td>@kitap.Name</td>
+            <td>@kitap.Author</td>
+            <td>
+                <input type="submit" asp-action="AddFavorite" value="Favorilere Ekle" />
+            </td>
+        </tr>
+            
+        }
+
+    </tbody>
+</table>

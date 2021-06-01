@@ -19,13 +19,11 @@ namespace CookiesNSession.Controllers
         {
             var listInSession=HttpContext.Session.Get<List<BookModel>>("Kitaplar");
             
-            
-
             if (listInSession==default)
             {
-                List<BookModel> kitaplar = new List<BookModel>();
-                kitaplar.Add(book);
-                HttpContext.Session.Set<List<BookModel>>("Kitaplar", kitaplar);
+                listInSession = new List<BookModel>();
+                listInSession.Add(book);
+                HttpContext.Session.Set<List<BookModel>>("Kitaplar", listInSession);
             }
             else
             {
@@ -33,11 +31,16 @@ namespace CookiesNSession.Controllers
                 HttpContext.Session.Set<List<BookModel>>("Kitaplar", listInSession);
             }
 
+            return View("BookList", listInSession);
+        }
 
 
-
+        [HttpPost]
+        public IActionResult AddFavorite(/*BookModel book*/)
+        {
             return View();
         }
+
 
     }
 }

@@ -6,3 +6,17 @@
 
 
 <h1>Kitap ekleme ekranı</h1>
+
+<form asp-action="AddBook" method="post">
+    <div>
+        <label>Kitap adı:</label>
+        <input type="text" name="Name" value="" />
+    </div>
+
+    <div>
+        <label>Yazar:</label>
+        <input type="text" name="Author" value="" />
+    </div>
+
+    <input type="submit" value="Gönder" />
+</form>

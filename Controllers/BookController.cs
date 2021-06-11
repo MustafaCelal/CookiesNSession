@@ -10,51 +10,52 @@ namespace CookiesNSession.Controllers
 {
     public class BookController : Controller
     {
-        [HttpGet]
+        [HttpGet]// Kitap ekleme sayfasına yönlendirir
         public IActionResult AddBook()
         {
             return View();
         }
-        [HttpPost]
+
+        [HttpPost]//Eklenmek istenen kitabı Sessiona ekler, Kitap listesi sayfasına yönlendirir
         public IActionResult AddBook(BookModel book)
         {
             var listInSession=HttpContext.Session.Get<List<BookModel>>("Kitaplar");
-            
-            if (listInSession==default)
-            {
-                listInSession = new List<BookModel>();
-                listInSession.Add(book);
-                HttpContext.Session.Set<List<BookModel>>("Kitaplar", listInSession);
-            }
-            else
-            {
-                listInSession.Add(book);
-                HttpContext.Session.Set<List<BookModel>>("Kitaplar", listInSession);
-            }
 
-            return View("BookList", listInSession);
+            if (listInSession == default)
+            { listInSession = new List<BookModel>(); }
+            
+            listInSession.Add(book);
+            HttpContext.Session.Set<List<BookModel>>("Kitaplar", listInSession);
+
+            return RedirectToAction("BookList","Book");
         }
 
-
-        //[HttpPost]
-        public IActionResult AddFavorite(/*BookModel book*/)
+        public IActionResult BookList()
         {
+            var listInSession = HttpContext.Session.Get<List<BookModel>>("Kitaplar");
 
+            if (listInSession == default)   // Kaydedilmiş kitap yok ise
+                ViewBag.EmptyList = "Kaydedilmiş kitap yok";
 
-            //string kitapAdi = string.Empty;
-            BookModel kitap = new BookModel()
-            {Name="Devlet",Author="Platon" };
+            if (Request.Cookies.ContainsKey("favoriKitap"))// favori kitap varsa
+                ViewBag.FavoriKitap = Request.Cookies["favoriKitap"];
 
+            return View("BookList",listInSession);
+        }
 
+        [HttpPost]
+        public IActionResult AddFavorite(BookModel book)
+        {
 
             CookieOptions options = new CookieOptions();
             options.Path = "/";
             options.Expires = new DateTimeOffset(DateTime.Now.AddMinutes(10));
 
-            Response.Cookies.Append("favoriKitap", kitap.Name, options);
+            
+            Response.Cookies.Append("favoriKitap",book.Name , options);
 
 
-            return View();
+            return RedirectToAction("BookList","Book");
         }
 
 

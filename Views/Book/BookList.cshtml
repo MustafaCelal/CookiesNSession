@@ -3,8 +3,17 @@
     ViewData["Title"] = "BookList";
 }
 
-<h1>BookList</h1>
 
+
+@if (!string.IsNullOrEmpty(ViewBag.EmptyList))
+{<label>@ViewBag.EmptyList</label> }
+else
+{
+
+@if (!string.IsNullOrEmpty(ViewBag.FavoriKitap))
+{<label>@ViewBag.FavoriKitap</label>}
+
+<h1>BookList</h1>
 <table>
     <thead>
         <tr>
@@ -17,15 +26,18 @@
 
         @foreach (BookModel kitap in Model)
         {
-        <tr>
-            <td>@kitap.Name</td>
-            <td>@kitap.Author</td>
-            <td>
-                <input type="submit" asp-action="AddFavorite" value="Favorilere Ekle" />
-            </td>
-        </tr>
-            
+            <tr>
+                <td>@kitap.Name</td>
+                <td>@kitap.Author</td>
+                <td>
+                    <input type="submit" asp-action="AddFavorite" value="Favorilere Ekle" />
+                </td>
+            </tr>
+
         }
 
     </tbody>
 </table>
+
+
+}

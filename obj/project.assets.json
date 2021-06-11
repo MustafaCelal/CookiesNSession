@@ -6232,7 +6232,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mwin10\\.nuget\\packages\\": {}
+    "C:\\Users\\Mwin10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6240,11 +6240,11 @@
       "projectUniqueName": "E:\\repos\\CookiesNSession\\CookiesNSession.csproj",
       "projectName": "CookiesNSession",
       "projectPath": "E:\\repos\\CookiesNSession\\CookiesNSession.csproj",
-      "packagesPath": "C:\\Users\\mwin10\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Mwin10\\.nuget\\packages\\",
       "outputPath": "E:\\repos\\CookiesNSession\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mwin10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mwin10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6293,7 +6293,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

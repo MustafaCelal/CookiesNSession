@@ -9,7 +9,6 @@ E:\repos\CookiesNSession\bin\Debug\net5.0\ref\CookiesNSession.dll
 E:\repos\CookiesNSession\bin\Debug\net5.0\CookiesNSession.pdb
 E:\repos\CookiesNSession\bin\Debug\net5.0\CookiesNSession.Views.dll
 E:\repos\CookiesNSession\bin\Debug\net5.0\CookiesNSession.Views.pdb
-E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.csprojAssemblyReference.cache
 E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.GeneratedMSBuildEditorConfig.editorconfig
 E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.AssemblyInfoInputs.cache
 E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.AssemblyInfo.cs
@@ -24,8 +23,6 @@ E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.TagHelpers.input.cache
 E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.TagHelpers.output.cache
 E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.RazorCoreGenerate.cache
 E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Book\AddBook.cshtml.g.cs
-E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -116,3 +113,4 @@ E:\repos\CookiesNSession\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspa
 E:\repos\CookiesNSession\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 E:\repos\CookiesNSession\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 E:\repos\CookiesNSession\obj\Debug\net5.0\Razor\Views\Book\BookList.cshtml.g.cs
+E:\repos\CookiesNSession\obj\Debug\net5.0\CookiesNSession.csproj.AssemblyReference.cache
